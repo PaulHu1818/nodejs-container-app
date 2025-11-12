@@ -27,7 +27,8 @@ jobs:
         with:
           context: .
           push: true
-          tags: <docker-username>/<repo-name>:latest
+          tags: paulhu1818/nodejs-container-app:latest
+
 
   deploy:
     runs-on: ubuntu-latest
@@ -37,4 +38,4 @@ jobs:
         run: |
           echo "Deploying container to production..."
           # Example:
-          # ssh user@your-server "docker pull <docker-username>/<repo-name>:latest && docker run -d -p 80:3000 <docker-username>/<repo-name>:latest"
+          # ssh user@your-server "docker pull paulhu1818/nodejs-container-app:latest && docker run -d -p 80:3000 <docker-username>/<repo-name>:latest"
